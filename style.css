@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  color: #444;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.hold {
+  height: 80px;
+}
+
+.header {
+  line-height: 80px;
+  width: 100%;
+  transition: line-height 0.2s linear, box-shadow 0.2s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(245, 245, 245, 0.97);
+}
+
+.header.small {
+  line-height: 50px;
+  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
+}
+
+.header.small > .container > #logo {
+  height: 40px;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  float: left;
+  height: 40px;
+  width: 170px;
+  margin-left: 5px;
+}
+
+ul.nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav li {
+  float: left;
+  position: relative;
+}
+
+ul.nav li a {
+  transition: color 0.2s linear;
+  font-size: 18px;
+}
+
+ul.nav li:hover a {
+  color: red;
+}
+
+ul.nav li a {
+  padding: 21px;
+  color: initial;
+  text-decoration: initial;
+}
+
+body {
+  background-color: #00bfff;
+
+  font-family: "Play", sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.packages {
+  margin: 20px;
+  width: 300px;
+  padding-bottom: 1.5em;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 19px 38px rgba(30, 35, 33, 1), 0 15px 12px rgba(30, 35, 33, 0.2);
+  flex-wrap: wrap;
+  color: ;
+}
+
+h1
+{
+  font-size: 1.3em;
+  color: #B2BEB5;
+   font-family: serif;
+}
+h4 {
+  font-size: 3.2em;
+   font-family: serif;
+}
+
+h2 {
+  font-size: 3em;
+ font-family: serif;
+}
+
+.list li {
+  font-size: 20px;
+  list-style: none;
+  border-bottom: 1px solid #f4f4f4;
+  padding-inline-start: 0;
+  border-width: 1px;
+  padding: 10px;
+  font-family:serif
+  
+}
+
+.first {
+  margin-top: 40px;
+  border-top: 1px solid #f4f4f4;
+   font-family: serif;
+}
+
+.list {
+  width: 80%;
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+
+.packages:hover 
+{
+  transform: scale(1.3);
+}
+
+.button {
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.4em;
+  margin: 15px 15px;
+  border-radius: 50px;
+  color: #f4f4f4;
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+.button1 {
+  background-color: #00cc99;
+  box-shadow: 0 0 10px 0 #00cc99 inset, 0 0 20px 2px #00cc99;
+}
+
+.button2 {
+  background-color: #ff007c;
+  box-shadow: 0 0 10px 0 #ff007c inset, 0 0 20px 2px #ff007c;
+}
+
+.button3 {
+  background-color: #ffae42;
+  box-shadow: 0 0 10px 0 #ffae42 inset, 0 0 20px 2px #ffae42;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #b8860b;
+  -webkit-transition: 0.4s;
+
+  box-shadow: 2px 6px 25px #1e2321;
+  transform: translate(0px, 0px);
+  transition: 0.6s ease transform, 0.6s box-shadow;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #50bfe6;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #50bfe6;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.package-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
